@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="formulario" method="post" action="/send.php">
+        <!-- Nombre de usuario. Obligatorio, entre 5-40 carácteres -->
+        Quien eres:
+        <input type="text" name="nombre" placeholder="Por ejemplo, Iris"
+               minlength="5" maxlength="40" required />
+        <!-- Contraseña. Obligatorio, mínimo 11 carácteres -->
+        Clave:
+        <input type="password" name="pass" placeholder="Contraseña"
+               minlength="11" required />
+    </form>
+    <form name="formulario" method="post" action="/send.php">
+        <!-- Nombre de usuario. Obligatorio, entre 5-40 carácteres
+           Sólo se permiten letras y números -->
+        <input type="text" name="nombre" placeholder="Quien eres"
+               minlength="5" maxlength="40" required pattern="[A-Za-z0-9]+" /><button>Mandar</button>
+    </form>
+
+    <form name="formulario" method="post" action="/send.php">
+        <!-- Nombre de usuario. Obligatorio, entre 5-40 carácteres
+           Sólo se permiten letras y números -->
+        <input type="text" name="nombre" placeholder="Su alias"
+               required pattern="[A-Za-z0-9]{5,40}"
+               title="Letras y números. Tamaño mínimo: 5. Tamaño máximo: 40" /> <button>Mandar</button>
+
+               <form name="formulario" method="post" action="/send.php">
+                <!-- Modelo de coche. Obligatorio, opciones posibles: A1, A3, A4 y A15
+                   Sólo se permiten letras y números -->
+                <input type="text" name="coche" placeholder="Año de su moticleta"
+                       required pattern="A|a(1|3|4|15)"
+                       title="Modelos posibles: A1, A3, A4 y A15" /> <button>enviar</button>
+            </form>
+    </form>
+
+</body>
+</html>
