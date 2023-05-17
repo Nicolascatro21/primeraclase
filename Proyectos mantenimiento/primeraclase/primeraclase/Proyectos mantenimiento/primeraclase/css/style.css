@@ -1,0 +1,33 @@
+body{
+
+    background-color:rgb(255, 255, 255);
+    font-family: cursive;
+    
+
+}
+img{
+    width: 300px; /*ancho de la imagen*/
+    height: 300px;/*alto de la imagen*/
+}
+tr:hover{
+    background-color:brown ;
+
+    
+}
+
+input{
+    border-radius: 3px;
+    border: 3px solid rgb(16, 22, 105);
+    background-color: rgb(38, 151, 10);
+}
+
+.inputcolor{
+
+background-color: rgb(40, 172, 139);
+
+}
+
+#contraseña{
+    background-color: rgb(234, 250, 215); /*color de fondo de la caja*/
+    color: rgba(243, 8, 196, 0.527);
+}

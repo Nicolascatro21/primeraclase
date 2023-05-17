@@ -1,0 +1,294 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    font-family: "roboto", sans-serif;
+}
+h1{
+font-size: 50px;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden;
+    background-color: aqua;
+}
+
+header::before {
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background: white;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0,0,0,.2);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+}
+.nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+
+}
+
+.enlaces-header{
+    font-weight: 300;
+    margin: auto;
+}
+
+.nav .enlaces-header a{
+    color: blue;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 12px;
+    border-radius: 10px;
+}
+.nav .enlaces-header a:hover {
+    color: #fff;
+    background-color: aqua;
+    border-color: aqua;
+    transition: all ease-in-out .5s;
+
+}
+.titulospro{
+    text-align: left;
+    margin: 20px 0;
+}
+
+.contenido-header{
+    width: 80%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.contenido-header > img{
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    animation: ease-in animacion 0.5s;
+}
+
+.contenido-header p{
+    font-weight: 300;
+    margin-top: 14px;
+    color: violet;
+    text-align: justify;
+}
+
+@keyframes animacion{
+    0%{ transform: scale(0) ;}
+    100%{transform: scale(1) ;}
+
+}
+.contenido-header a{
+    margin: 28px 0 0 0;
+    width: 150px;
+    display: inline-block;
+    background-color: #fff;
+    text-align: center;
+    color: aqua;
+    text-decoration: none;
+    padding: 12px 0;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    box-shadow: 0 8px 32px rgba(red, green, blue, alpha);
+}
+
+/* ########### education ###########*/
+.content-education{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    /*arriba puede ser padding*/
+    justify-content: space-around;
+    background-color: aqua;
+}
+.title{
+    width: 100%;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.education{
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+.education:hover{
+    box-shadow: 0px opx 20px gray;
+    transition: all ease-in-out;
+    
+}
+.education a{
+    text-decoration: none;
+    font-size: 12px;
+    color: gray;
+}
+.education a:hover{
+    color: red;
+}
+.education i {
+    color: yellowgreen;
+    font-size: 30px;
+    border-radius: 50%;
+    border: 3px solid red;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    text-align: center;
+    align-items: center;
+}
+/* certificado */
+     
+.content-certificados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+}
+
+.certicado{
+    background-color: #fff;
+    border: 1px solid rgb(211, 219, 210);
+    border-radius: 5px;
+    width: 22%;
+    padding: 15px;
+    margin: 10px 10px;
+    text-align: center;
+}
+
+.certicado img{
+    height: 100px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.certicado a{
+    color: chocolate;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.certicado a:hover{
+    color: darkgreen;
+}
+
+.certicado:hover{
+    background-color: gold;
+    color: snow;
+}
+
+/* ################ FOOTER ################ */
+footer{
+    background: rgb(70, 70, 70);
+    padding: 50px 0px 20px 0px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.partFooter{
+    width: 22%;
+    text-align: center;
+}
+
+.partFooter>img{
+    width: 60%;
+}
+
+.partFooter>h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    background-color: chartreuse;
+    border-radius: 5px;
+    border: 1px solid rgb(blue, violet, blue);
+    padding: 5px;
+}
+
+.contact{
+    margin: 10px;
+    display: block;
+    text-align: left;
+}
+
+.contact>i{
+    color: white;
+    float: left;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    line-height: 28px;
+    text-align: center;
+    align-items: center;
+}
+
+.contact>p{
+    margin-left: 50px;
+    align-items: center;
+    line-height: 28px;
+    font-weight: 500;
+    color: white;
+}
+
+.partFooter>a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.partFooter>a:hover{
+    background-color: aquamarine;
+    transition: all ease-in-out .6s;
+}
+
+.social_media>a>i{
+    font-size: 23px;
+    color: white;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    margin-top: 10px;
+    text-align: center;
+    margin-right: 5px;
+    transition: all ease-in-out .6s;
+}
+
+.social_media>a>i:hover{
+    background-color: aquamarine;
+    border-color: aquamarine;
+}
